@@ -49,11 +49,11 @@
 %=======================================================================================
 \subsection*{Term en formule}
 \addcontentsline{toc}{subsection}{Term en formule}
-Een term is een string die kan bekomen worden door herhaaldelijke toepassing van de volgende regels: \begin{itemize}
+\paragraph{Een term} is een string die kan bekomen worden door herhaaldelijke toepassing van de volgende regels: \begin{itemize}
 \item Een objectsymbool is een term.
 \item Als t\textsubscript{1}, ..., t\textsubscript{n} termen zijn en G een \textit{n}-voudige functiesymbool, dan is G(t\textsubscript{1}, ..., t\textsubscript{n}) een term.
-\end{itemize} \hspace{0pt}\\
-Een formule is een string die kan bekomen worden door herhaaldelijke toepassing van de volgende regels: \begin{itemize}
+\end{itemize}
+\paragraph{Een formule} is een string die kan bekomen worden door herhaaldelijke toepassing van de volgende regels: \begin{itemize}
 \item Als t\textsubscript{1}, ..., t\textsubscript{n} termen zijn en P/\textit{n} een relatiesymbool van ariteit \textit{n}, dan is P(t\textsubscript{1}, ..., t\textsubscript{n}) een formule. We noemen dit een \textbf{atoom}.
 \item Als t\textsubscript{1}, t\textsubscript{2} termen zijn, dan is $t_1 = t_2$ een formule. Dit noemen we een gelijkheidsatoom.
 \item Als A, B formules zijn, dan zijn $(\neg A)$, $(A\land B)$, $(A\lor B)$, $(A\implies B)$ en $(A\iff B)$ ook formules.
@@ -71,16 +71,33 @@ We noemen $\tau^\textit{U}$ de waarde of interpretatie van $\tau$ in \textit{U}.
 
 \subsection*{Formule A is waar in structuur U}
 \addcontentsline{toc}{subsection}{Formule A is waar in structuur U}
+\textbf{Definitie 1} in formularium.
 
 \subsection*{Logische waarheid, consistentie, equivalentie, tegenstrijdigheid}
 \addcontentsline{toc}{subsection}{Logische waarheid, consistentie, equivalentie, tegenstrijdigheid}
+\paragraph{Logische waarheid}\hspace{0pt}\\
+Een logische formule A is logisch waar, of is een \textbf{tautologie} als ze waar is in alle structuren \textit{U} die A interpreteren. Notatie: $\models A$
+\paragraph{Logische consistentie}\hspace{0pt}\\
+Een logische formule A is logisch consistent als ze waar is in minstens \'e\'en structuur.
+\paragraph{Logische equivalentie}\hspace{0pt}\\
+A is logisch equivalent met B indien A en B dezelfde waarheidswaarde hebben.
+\paragraph{Logische tegenstrijdigheid}\hspace{0pt}\\
+Een logische formule A is logisch inconsistent, tegenstrijdig of contradictorisch als er geen structuur bestaat waarin A waar is.
 
 \subsection*{Inferentie}
 \addcontentsline{toc}{subsection}{Inferentie}
+Een inferentieprobleem is een probleem met een input en een gewenste output. De input bestaat uit \'e\'en of meerdere logische objecten. Hiermee bedoelen we:\begin{itemize}
+\item een symbool of vocabularium
+\item een waarde uit een domein
+\item een structuur: een toekenning van waardes aan symbolen
+\item een logische uitdrukking: een term, een verzamelingenuitdrukking, een formule of zin, een theorie.
+\end{itemize}
+De output bestaat uit \'e\'en of meerdere logische objecten die aan een bepaalde logische voorwaarde in termen van de invoer voldoen.
 
 \subsection*{Een afbeelding is berekenbaar dmv een registermachine}
 \addcontentsline{toc}{subsection}{Een afbeelding is berekenbaar dmv een registermachine}
-
+Een afbeelding is berekenbaar dmv een registermachine als er een registermachine \textit{M} bestaat die bij iedere input $a_1, a_2, \cdots, a_k \in \mathbb{N}$ stopt na een eindig aantal stappen met output $f(a_1, \cdots, a_k)$.\\
+We zeggen dat R semi-beslisbaar is dmv een registermachine als er een registermachine bestaat die voor elke input $(a_1, a_2, \cdots, a_n) \in \textit{R}$ eindigt en 1 antwoordt en voor elke input $(a_1, a_2, \cdots, a_n) \notin \textit{R}$ eindigt en 0 antwoordt ofwel niet eindigt.
 
 %=======================================================================================
 \section*{Oefeningen en inzichtsvragen}
