@@ -1,2 +1,2 @@
 # Samenvatting-Logica
-Samenvatting Logica voor informatici 2017-2018
+Overzicht van mogelijke theorievragen met hun antwoorden voor het vak "Logica voor Informatici" 2017-2018.
